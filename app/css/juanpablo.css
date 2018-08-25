@@ -1,0 +1,34 @@
+/*	
+	CSS Compilado con SASS - 
+*/
+/*	
+	Variables - En este nivel estan las Variables en SASS
+*/
+/*	
+	Mixins - En este nivel estan los mixins en SASS
+	Mixins - pueden tener
+*/
+/*Inician los Magic Styles*/
+body {
+  background-color: black;
+}
+body h1 {
+  color: pink;
+}
+body div {
+  background-color: peru;
+  color: pink;
+}
+body div .grande {
+  font-size: 50px;
+  color: purple;
+  margin: 100px;
+}
+
+#grande {
+  font-size: 50px;
+  color: purple;
+  margin: 30px;
+}
+
+/*# sourceMappingURL=juanpablo.css.map */

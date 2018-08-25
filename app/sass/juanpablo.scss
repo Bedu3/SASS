@@ -1,0 +1,50 @@
+/*	
+	CSS Compilado con SASS - 
+*/
+
+/*	
+	Variables - En este nivel estan las Variables en SASS
+*/
+
+$color_principal: pink;
+$color_secondario: peru;
+
+
+/*	
+	Mixins - En este nivel estan los mixins en SASS
+	Mixins - pueden tener
+*/
+
+@mixin grande_default($margin) {
+		font-size: 50px;
+		color: purple;
+		margin: $margin;
+	}
+
+
+/*Inician los Magic Styles*/
+
+body {
+	background-color: black;
+
+	h1 {
+	color: $color_principal;
+	}
+
+	div {
+	background-color: $color_secondario;
+	color: $color_principal;
+
+	.grande {
+		@include grande_default(100px);
+	}
+	}
+}
+
+#grande {
+	@include grande_default(30px);
+}
+
+
+
+
