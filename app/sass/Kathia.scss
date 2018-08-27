@@ -1,0 +1,146 @@
+/*<!--variables--->*/
+$color_principal: white;
+$color_secundario: black;
+$fontcolor_principal: deeppink;
+$ancho_principal: 255px;
+$alto_cuadrado: 180px;
+$alto_cuadrado2: 255px;
+$alto_rectangulo2: 340px;
+
+
+
+/*mixin*/
+
+@mixin join_shadow {
+	div.conteiner_Kathia {
+  		padding-bottom: 20px;
+  		padding-top: 20px;
+  		box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2), 6px 10px 0 0 rgba(0, 0, 0, 0.19);
+
+  		h4 {
+  			padding-left: 15px;
+  		}
+  	}		
+}
+
+
+@mixin shadowbox {
+	box-shadow: 4px 0  0 0 rgba(0, 0, 0, 0.2), 6px 0 0 0 rgba(0, 0, 0, 0.19);
+  	text-align: left
+}
+
+
+@mixin rectangulo2 {
+	width: $ancho_principal;
+	height: $alto_rectangulo2;
+}
+
+@mixin cuadrado2 {
+	width: $ancho_principal;
+	height: $alto_cuadrado2;
+}
+
+@mixin cuadrado {
+	width: $ancho_principal;
+	height: $alto_cuadrado;
+}
+
+@mixin letreros_default {
+	color: $fontcolor_principal;
+	font-style: bold;
+}
+
+@mixin centrado_default {
+	align-items: center;
+}
+
+h2 {
+	color: $fontcolor_principal;
+	display: flex;
+	justify-content: start;
+	@include letreros_default;
+}
+
+
+
+h1 ,h6 { 
+    text-shadow: 2px 2px 4px fushia;
+	@include letreros_default;	
+}
+
+h1 {
+	padding-left: 110px;
+	padding-top: 50px;
+	font-size: 50px;
+	padding-bottom: 0;
+}
+
+h6 {
+	padding-left: 155px;
+	padding-top: 0;
+	line-height: 5%;
+	margin-top: 0;
+}
+
+h5 {
+	color: $fontcolor_principal;
+	display: flex;
+	justify-content: right;
+	align-items: end;
+	@include letreros_default
+}
+
+
+header {
+	background-image: url("https://i.pinimg.com/originals/d1/63/da/d163da457a36b6e4543b77d46e615f67.jpg");
+	height:	300px;
+	padding: 15px 80px;
+}
+
+.hfooter {
+	background-color: $color_secundario;
+	padding: 10px 80px;
+	height: 50px;
+	@include shadowbox;	
+}
+
+
+div.cuadrado {
+	margin-left: 80px;
+	padding: 20px 0 20px 0;
+	background-color: $color_principal;
+
+}
+	
+div.cuadrado1 {
+	@include cuadrado;
+	@include shadowbox;
+	@include join_shadow;
+
+}
+		
+/*div.conteiner_Kathia {
+  	padding-bottom: 20px;
+  	padding-top: 20px;
+  	box-shadow: 4px 4px 0 0 grey, 4px 4px 0 0 rgba(0, 0, 0, 0.19);
+
+  	h4 {
+  		padding-left: 15px;
+  	}
+ } 	
+  	*/	
+    
+div.cuadrado2  {
+	@include cuadrado2;
+	@include shadowbox;
+	@include join_shadow;
+}
+
+div.rectangulo2 {
+	@include rectangulo2;
+	@include shadowbox;
+	@include join_shadow;
+    	
+
+}
+

@@ -1,0 +1,115 @@
+/*<!--variables--->*/
+/*mixin*/
+h2 {
+  color: deeppink;
+  display: flex;
+  justify-content: start;
+  color: deeppink;
+  font-style: bold;
+}
+
+h1, h6 {
+  text-shadow: 2px 2px 4px fushia;
+  color: deeppink;
+  font-style: bold;
+}
+
+h1 {
+  padding-left: 110px;
+  padding-top: 50px;
+  font-size: 50px;
+  padding-bottom: 0;
+}
+
+h6 {
+  padding-left: 155px;
+  padding-top: 0;
+  line-height: 5%;
+  margin-top: 0;
+}
+
+h5 {
+  color: deeppink;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  color: deeppink;
+  font-style: bold;
+}
+
+header {
+  background-image: url("https://i.pinimg.com/originals/d1/63/da/d163da457a36b6e4543b77d46e615f67.jpg");
+  height: 300px;
+  padding: 15px 80px;
+}
+
+.hfooter {
+  background-color: black;
+  padding: 10px 80px;
+  height: 50px;
+  box-shadow: 4px 0 0 0 rgba(0, 0, 0, 0.2), 6px 0 0 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+}
+
+div.cuadrado {
+  margin-left: 80px;
+  padding: 20px 0 20px 0;
+  background-color: white;
+}
+
+div.cuadrado1 {
+  width: 255px;
+  height: 180px;
+  box-shadow: 4px 0 0 0 rgba(0, 0, 0, 0.2), 6px 0 0 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+}
+div.cuadrado1 div.conteiner_Kathia {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2), 6px 10px 0 0 rgba(0, 0, 0, 0.19);
+}
+div.cuadrado1 div.conteiner_Kathia h4 {
+  padding-left: 15px;
+}
+
+/*div.conteiner_Kathia {
+  	padding-bottom: 20px;
+  	padding-top: 20px;
+  	box-shadow: 4px 4px 0 0 grey, 4px 4px 0 0 rgba(0, 0, 0, 0.19);
+
+  	h4 {
+  		padding-left: 15px;
+  	}
+ } 	
+  	*/
+div.cuadrado2 {
+  width: 255px;
+  height: 255px;
+  box-shadow: 4px 0 0 0 rgba(0, 0, 0, 0.2), 6px 0 0 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+}
+div.cuadrado2 div.conteiner_Kathia {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2), 6px 10px 0 0 rgba(0, 0, 0, 0.19);
+}
+div.cuadrado2 div.conteiner_Kathia h4 {
+  padding-left: 15px;
+}
+
+div.rectangulo2 {
+  width: 255px;
+  height: 340px;
+  box-shadow: 4px 0 0 0 rgba(0, 0, 0, 0.2), 6px 0 0 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+}
+div.rectangulo2 div.conteiner_Kathia {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2), 6px 10px 0 0 rgba(0, 0, 0, 0.19);
+}
+div.rectangulo2 div.conteiner_Kathia h4 {
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=Kathia.css.map */
