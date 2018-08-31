@@ -1,0 +1,80 @@
+$color_principal: rgb(201, 229, 231);
+$color_secundario: lightblue;
+
+/*Mixins*/
+@mixin menu{
+  color: $color_principal;
+  margin: 10px;
+}
+
+@mixin texto($font-size){
+  color: $color_principal;
+  text-align: center;
+  font-size: $font-size;
+  margin: 0;
+}
+
+@mixin nombre{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+  header{
+    background-image: url('https://i.pinimg.com/originals/fe/6c/c2/fe6cc289e41685dd34fcdb086291d900.jpg');
+
+    h2{
+      float: left;
+      @include menu;
+    }
+
+    nav{
+      @include menu;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li{
+
+      margin: 10px;
+    }
+
+    h1{
+      text-align: center;
+      @include menu;
+    }
+
+    #arriba {
+      @include texto(50px);
+    }
+
+    #abajo{
+      @include texto(20px);
+    }
+
+    .menu2{
+      background-color: black
+    }
+
+  }
+
+.container{
+  .pre{
+    box-shadow: -5px 5px 5px 5px rgba(0,0,0,0.5);
+  }
+  img{
+    width: 100%;
+  }
+  div{
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    p{
+      text-align: center;
+      font-family: verdana;
+    }
+  }
+}

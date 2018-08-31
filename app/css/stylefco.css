@@ -1,0 +1,58 @@
+/*Mixins*/
+header {
+  background-image: url("https://i.pinimg.com/originals/fe/6c/c2/fe6cc289e41685dd34fcdb086291d900.jpg");
+}
+header h2 {
+  float: left;
+  color: #c9e5e7;
+  margin: 10px;
+}
+header nav {
+  color: #c9e5e7;
+  margin: 10px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+header li {
+  margin: 10px;
+}
+header h1 {
+  text-align: center;
+  color: #c9e5e7;
+  margin: 10px;
+}
+header #arriba {
+  color: #c9e5e7;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+header #abajo {
+  color: #c9e5e7;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+header .menu2 {
+  background-color: black;
+}
+
+.container .pre {
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.container img {
+  width: 100%;
+}
+.container div {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.container div p {
+  text-align: center;
+  font-family: verdana;
+}
+
+/*# sourceMappingURL=stylefco.css.map */
