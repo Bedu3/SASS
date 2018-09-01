@@ -92,6 +92,15 @@ header {
   &-main {
     @include absolute-center;
     text-align: center;
+
+    h1 {
+      font-size: 70px;
+      margin: 0;
+    }
+
+    div {
+      font-size: 14px;
+    }
   }
 
   &-top {
@@ -108,7 +117,6 @@ header {
   }
 
   &-bottom {
-    @include mleft(20px);
     @include dark;
 
     .container {

@@ -45,6 +45,13 @@ header {
   align-items: center;
   text-align: center;
 }
+#header-main h1 {
+  font-size: 70px;
+  margin: 0;
+}
+#header-main div {
+  font-size: 14px;
+}
 #header-top {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -57,7 +64,6 @@ header {
   margin-left: 20px;
 }
 #header-bottom {
-  margin-left: 20px;
   background-color: black;
   color: white;
 }
