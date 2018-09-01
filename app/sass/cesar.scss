@@ -1,0 +1,144 @@
+/* ------------------------------------------- *\
+|                  $VARIABLES                   |
+\* ------------------------------------------- */
+$color-principal: white;
+$color-secundario: darkgreen;
+$card-margin: 20px;
+$img-width: 100%;
+
+/* ------------------------------------------- *\
+|                   $MIXINS                     |
+\* ------------------------------------------- */
+@mixin absolute-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mtop($margin) {
+  margin-top: $margin;
+}
+
+@mixin mright($margin) {
+  margin-right: $margin;
+}
+
+@mixin mbottom($margin) {
+  margin-bottom: $margin;
+}
+
+@mixin mleft($margin) {
+  margin-left: $margin;
+}
+
+@mixin pad-top-bot {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@mixin shadow-gradient {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin card-default() {
+  @include shadow-gradient;
+  margin: $card-margin;
+  padding: 0;
+  border: 0;
+}
+
+@mixin dark() {
+  background-color: black;
+  color: white;
+}
+
+body,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.row {
+  .card {
+    @include card-default;
+  }
+  img {
+    width: $img-width;
+    margin: 0;
+  }
+  h3 {
+    padding-left: 10px;
+  }
+}
+
+.navbar{
+  li {
+    list-style: none;
+  }
+}
+
+
+.flex-row {
+  flex-direction: row;
+}
+
+#header {
+  background-image: url('https://img.jakpost.net/c/2018/04/24/2018_04_24_44783_1524575971._large.jpg');
+  color: white;
+
+  &-main {
+    @include absolute-center;
+    text-align: center;
+  }
+
+  &-top {
+    @include pad-top-bot;
+
+    .display-flex {
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+        @include mleft(20px);
+      }
+    }
+  }
+
+  &-bottom {
+    @include mleft(20px);
+    @include dark;
+
+    .container {
+      @include pad-top-bot;
+    }
+
+    span {
+      @include mright(20px);
+    }
+  }
+}
+
+// body {
+//   background-color: $color-principal;
+//
+//   h1 {
+//     color: darkgreen;
+//   }
+//
+//   div {
+//     background-color: $color-secundario;
+//     color: $color-principal;
+//
+//     .grande {
+//       @include grande_default(100px);
+//     }
+//   }
+// }
+
+
+// #grande {
+//   @include grande_default(30px);
+// }

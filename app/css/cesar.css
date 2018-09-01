@@ -1,0 +1,72 @@
+/* ------------------------------------------- *\
+|                  $VARIABLES                   |
+\* ------------------------------------------- */
+/* ------------------------------------------- *\
+|                   $MIXINS                     |
+\* ------------------------------------------- */
+body,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.row .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  padding: 0;
+  border: 0;
+}
+.row img {
+  width: 100%;
+  margin: 0;
+}
+.row h3 {
+  padding-left: 10px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+#header {
+  background-image: url("https://img.jakpost.net/c/2018/04/24/2018_04_24_44783_1524575971._large.jpg");
+  color: white;
+}
+#header-main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#header-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header-top .display-flex {
+  align-items: center;
+  justify-content: flex-end;
+}
+#header-top .display-flex span {
+  margin-left: 20px;
+}
+#header-bottom {
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+}
+#header-bottom .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header-bottom span {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=cesar.css.map */
